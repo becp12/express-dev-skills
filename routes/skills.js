@@ -10,19 +10,19 @@ router.get('/', skillsCtrl.index);
 // GET /skills/new
 router.get('/new', skillsCtrl.new);
 
-// GET /skills/:skill
-router.get('/:skill', skillsCtrl.show);
+// GET /skills/:id
+router.get('/:id', skillsCtrl.show);
 
 // POST /skills create
 router.post('/', skillsCtrl.create);
 
-// DELETE /skills/:skill
-router.delete('/:skill', skillsCtrl.delete)
+// DELETE /skills/:id
+router.delete('/:id', skillsCtrl.delete)
 
-// GET /skills/:skill/edit (edit functionality - update todos)
-router.get('/:skill/edit', skillsCtrl.edit);
+// GET /skills/:id/edit (edit functionality - update todos)
+router.get('/:id/edit', skillsCtrl.edit);
 
-// PUT /skills/:skill/ (update functionlity)
-router.put('/:skill', skillsCtrl.update);
+// PUT /skills/:id/ (update functionlity)
+router.put('/:id', skillsCtrl.update);
 
 module.exports = router;

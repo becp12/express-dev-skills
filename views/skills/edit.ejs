@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
 <h1>Edit Skill</h1>
-<form action="/skills/<%= skill.skill %>?_method=PUT"" method="POST" autocomplete="off">
+<form action="/skills/<%= skill.id %>?_method=PUT"" method="POST" autocomplete="off">
   <label for="skill">Update Developer Skill</label>
   <input type="text" name="skill" id="skill" value="<%= skill.skill %>"><br/>
   <label for="project">Update Sample Project</label>
