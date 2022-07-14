@@ -19,4 +19,10 @@ router.post('/', skillsCtrl.create);
 // DELETE /skills/:skill
 router.delete('/:skill', skillsCtrl.delete)
 
+// GET /skills/:skill/edit (edit functionality - update todos)
+router.get('/:skill/edit', skillsCtrl.edit);
+
+// PUT /skills/:skill/ (update functionlity)
+router.put('/:skill', skillsCtrl.update);
+
 module.exports = router;

@@ -9,6 +9,7 @@ const skills = [
     getOne,
     create,
     deleteOne,
+    update,
   };
   
   function getAll() {
@@ -29,3 +30,10 @@ const skills = [
     const idx = skills.findIndex(s => s.skill === skill);
     skills.splice(idx, 1);
   }
+
+  function update(skillId, updatedSkill) {
+    const skill = skills.find((s) => s.skill === skillId);
+    // Merge the updatedTodo's properties into the
+    // existing todo object's property
+    Object.assign(skill, updatedSkill);
+};

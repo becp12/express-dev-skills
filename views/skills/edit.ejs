@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<h1>Edit Skill</h1>
+<form action="/skills/<%= skill.skill %>?_method=PUT"" method="POST" autocomplete="off">
+  <label for="skill">Update Developer Skill</label>
+  <input type="text" name="skill" id="skill" value="<%= skill.skill %>"><br/>
+  <label for="project">Update Sample Project</label>
+  <input type="text" name="project" id="project" value="<%= skill.project %>"><br/>
+  <label for="level">Update Skill Level</label>
+  <select name="level">
+    <option value="<%= skill.level %>"><%= skill.level %></option>
+    <option value="Beginner">Beginner</option>
+    <option value="Advanced Beginner">Advanced Beginner</option>
+    <option value="Competent">Competent</option>
+    <option value="Proficient">Proficient</option>
+    <option value="Expert">Expert</option>
+  </select>
+  <br/>
+  <input type="submit" value="Update Skill">
+</form>
+
+<%- include('../partials/footer') %>
