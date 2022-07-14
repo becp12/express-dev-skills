@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<h1>Add New Skill</h1>
+<form action="/skills" method="POST" autocomplete="off">
+  <label for="skill">Enter Developer Skill</label>
+  <input type="text" name="skill" id="skill"><br/>
+  <label for="project">Enter Sample Project</label>
+  <input type="text" name="project" id="project"><br/>
+  <label for="level">Select Skill Level</label>
+  <select name="level">
+    <option value="">--- Select ---</option>
+    <option value="Beginner">Beginner</option>
+    <option value="Advanced Beginner">Advanced Beginner</option>
+    <option value="Competent">Competent</option>
+    <option value="Proficient">Proficient</option>
+    <option value="Expert">Expert</option>
+  </select>
+  <br/>
+  <input type="submit" value="Update To-Do">
+</form>
+
+<%- include('../partials/footer') %>

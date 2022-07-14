@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express Developer Skills</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
-    <h1><%= skill.skill %></h1>
-    <h3>Skill Level: <%= skill.level %></h3>
-    <h3>Example Project: <%= skill.project %></h3>
-    <a href="http://localhost:3000/skills/">Back to Developer Skills</a>
-  </body>
-</html>
+<%- include('../partials/header') %>
+
+  <h1><%= skill.skill %></h1>
+  <h3>Skill Level: <%= skill.level %></h3>
+  <h3>Example Project: <%= skill.project %></h3>
+  <input type="submit" value="Delete Skill">
+  <br/>
+  <a href="http://localhost:3000/skills/">Back to Developer Skills</a>
+  
+<%- include('../partials/footer') %>
