@@ -3,7 +3,10 @@
   <h1><%= skill.skill %></h1>
   <h3>Skill Level: <%= skill.level %></h3>
   <h3>Example Project: <%= skill.project %></h3>
-  <input type="submit" value="Delete Skill">
+  <form action="/skills/<%= skill.skill %>?_method=DELETE"
+    class="delete-form" method="POST">
+    <button type="submit">Delete Skill</button>
+  </form>
   <br/>
   <a href="http://localhost:3000/skills/">Back to Developer Skills</a>
   

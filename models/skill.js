@@ -7,7 +7,8 @@ const skills = [
   module.exports = {
     getAll,
     getOne,
-    create
+    create,
+    deleteOne,
   };
   
   function getAll() {
@@ -22,4 +23,9 @@ const skills = [
 
   function create(skill) {
     skills.push(skill);
+  }
+
+  function deleteOne(skill) {
+    const idx = skills.findIndex(s => s.skill === skill);
+    skills.splice(idx, 1);
   }
